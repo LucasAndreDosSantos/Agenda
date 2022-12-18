@@ -1,0 +1,43 @@
+# Project: Agenda
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = aniversario.o menuPrincipal.o compromisso.o lembrete.o eventos.o arquivo.o
+LINKOBJ  = aniversario.o menuPrincipal.o compromisso.o lembrete.o eventos.o arquivo.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Agenda.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+aniversario.o: aniversario.cpp
+	$(CPP) -c aniversario.cpp -o aniversario.o $(CXXFLAGS)
+
+menuPrincipal.o: menuPrincipal.cpp
+	$(CPP) -c menuPrincipal.cpp -o menuPrincipal.o $(CXXFLAGS)
+
+compromisso.o: compromisso.cpp
+	$(CPP) -c compromisso.cpp -o compromisso.o $(CXXFLAGS)
+
+lembrete.o: lembrete.cpp
+	$(CPP) -c lembrete.cpp -o lembrete.o $(CXXFLAGS)
+
+eventos.o: eventos.cpp
+	$(CPP) -c eventos.cpp -o eventos.o $(CXXFLAGS)
+
+arquivo.o: arquivo.c
+	$(CPP) -c arquivo.c -o arquivo.o $(CXXFLAGS)

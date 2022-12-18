@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Agenda" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="Agenda" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+		</Build>
+		<Unit filename="aniversario.cpp" />
+		<Unit filename="aniversario.hpp" />
+		<Unit filename="arquivo.c">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Unit filename="arquivo.h" />
+		<Unit filename="compromisso.cpp" />
+		<Unit filename="compromisso.hpp" />
+		<Unit filename="eventos.cpp" />
+		<Unit filename="eventos.hpp" />
+		<Unit filename="lembrete.cpp" />
+		<Unit filename="lembrete.hpp" />
+		<Unit filename="menuPrincipal.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

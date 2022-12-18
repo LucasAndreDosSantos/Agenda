@@ -1,0 +1,60 @@
+# depslib dependency file v1.0
+1650046912 source:/home/lucaslinux/Documentos/1 ano/C/Nova pasta (23)/aniversario.cpp
+	"aniversario.hpp"
+	<stdio.h>
+	<ctype.h>
+	<string.h>
+
+1575179800 /home/lucaslinux/Documentos/1 ano/C/Nova pasta (23)/aniversario.hpp
+
+1650046953 source:/home/lucaslinux/Documentos/1 ano/C/Nova pasta (23)/arquivo.c
+	<stdio.h>
+	<string.h>
+	"arquivo.h"
+
+1575179800 /home/lucaslinux/Documentos/1 ano/C/Nova pasta (23)/arquivo.h
+	"aniversario.hpp"
+	"lembrete.hpp"
+	"compromisso.hpp"
+
+1575179800 /home/lucaslinux/Documentos/1 ano/C/Nova pasta (23)/lembrete.hpp
+
+1575179800 /home/lucaslinux/Documentos/1 ano/C/Nova pasta (23)/compromisso.hpp
+
+1650046969 source:/home/lucaslinux/Documentos/1 ano/C/Nova pasta (23)/compromisso.cpp
+	"compromisso.hpp"
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+
+1575179800 source:/home/lucaslinux/Documentos/1 ano/C/Nova pasta (23)/menuPrincipal.cpp
+	<stdio.h>
+	<string.h>
+	<time.h>
+	<ctype.h>
+	"aniversario.hpp"
+	"compromisso.hpp"
+	"lembrete.hpp"
+	"eventos.hpp"
+	"arquivo.h"
+
+1575179800 /home/lucaslinux/Documentos/1 ano/C/Nova pasta (23)/eventos.hpp
+
+1650047012 source:/home/lucaslinux/Documentos/1 ano/C/Nova pasta (23)/lembrete.cpp
+	"lembrete.hpp"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+
+1650047020 source:/home/lucaslinux/Documentos/1 ano/C/Nova pasta (23)/eventos.cpp
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<time.h>
+	"eventos.hpp"
+	"lembrete.hpp"
+	"compromisso.hpp"
+	"aniversario.hpp"
+
